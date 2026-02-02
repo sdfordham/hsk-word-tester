@@ -7,11 +7,7 @@ import { shuffleArray } from './utils.jsx'
 function App() {
   const hskLevels = ['1', '2', '3', '4', '5', '6'];
   const [selectedLevels, setSelectedLevels] = useState(new Set(['1', '2', '3']));
-  const [hskWords, setHskWords] = useState(
-    shuffleArray(
-      hskWordsJson.filter(char => selectedLevels.has(String(char.hsk)))
-    )
-  );
+  const [hskWords, setHskWords] = useState([]);
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
 
