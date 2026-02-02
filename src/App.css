@@ -47,3 +47,9 @@ h1 {
   color: #111;
   line-height: 1;
 }
+
+/* Keep the Reveal/Hide button a consistent width so it doesn't jump */
+.reveal-btn {
+  min-width: 6.5rem;
+  text-align: center;
+}

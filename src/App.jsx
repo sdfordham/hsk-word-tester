@@ -77,7 +77,7 @@ function App() {
                   </Row>
 
                   <div className="d-flex gap-2 mt-3 justify-content-center">
-                    <Button variant="primary" onClick={() => setRevealed(!revealed)}>
+                    <Button variant="primary" className="reveal-btn" onClick={() => setRevealed(!revealed)}>
                       {revealed ? 'Hide' : 'Reveal'}
                     </Button>
                     <Button variant="success" onClick={handleNext} disabled={hskWords.length === 0}>
